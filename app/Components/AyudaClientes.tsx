@@ -46,8 +46,8 @@ export default function AyudaClientes() {
         ))}
       </div>
       <div className="grid grid-cols-2 border-2 border-solid border-lightgreen rounded-3xl p-10">
-        <div className="flex flex-col gap-10 ">
-          <Image className="mb-8" src="/images/Balanza.jpg" alt="Divorcio" width={100} height={100} />
+        <div className="flex flex-col gap-4 ">
+          {/* <Image className="mb-2" src="/images/Balanza.png" alt="Divorcio" width={100} height={100} /> */}
           <h1 className="text-3xl font-bold ">
             {asesorias[selectedAsesoria - 1].nombre}
           </h1>
@@ -55,14 +55,14 @@ export default function AyudaClientes() {
             {asesorias[selectedAsesoria - 1].descripcion}
           </p>
         </div>
-        <div >
+        <div className="flex justify-center items-center">
           {/* <AspectRatio ratio={16 / 9}> */}
             <Image
               src={asesorias[selectedAsesoria - 1].image}
               alt={asesorias[selectedAsesoria - 1].nombre}
-              width={800}
+              width={600}
               height={400}
-              className="rounded-xl max-w-{800px} max-h-[400px]"
+              className="rounded-xl max-w-{800px} max-h-[310px] min-w-[200px] min-h-[300px]"
             />
           {/* </AspectRatio> */}
         </div>
