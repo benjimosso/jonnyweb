@@ -1,17 +1,18 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, EB_Garamond } from "next/font/google";
+import {  EB_Garamond } from "next/font/google";
 import "./globals.css";
 import NavBar from "./Components/NavBar";
+import Footer from "./Components/Footer";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
+// const geistSans = Geist({
+//   variable: "--font-geist-sans",
+//   subsets: ["latin"],
+// });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+// const geistMono = Geist_Mono({
+//   variable: "--font-geist-mono",
+//   subsets: ["latin"],
+// });
 
 const garamond = EB_Garamond({
   weight: "400",
@@ -32,10 +33,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${garamond.variable} antialiased`}
+        className={`${garamond.variable} antialiased`}
       >
         <NavBar />
         {children}
+        <Footer />
       </body>
     </html>
   );

@@ -1,6 +1,6 @@
 import AyudaClientes from "../app/Components/AyudaClientes";
 import PreguntasFrecuentes from "../app/Components/PreguntasFrecuentes";
-import Footer from "./Components/Footer";
+
 
 export default function Home() {
   return (
@@ -55,10 +55,7 @@ export default function Home() {
       <AyudaClientes />
       <PreguntasFrecuentes />
       {/* </main> */}
-
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <Footer />
-      </footer>
+      
     </div>
   );
 }
